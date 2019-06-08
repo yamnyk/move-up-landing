@@ -1,3 +1,4 @@
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
@@ -37,8 +38,32 @@ module.exports = {
 				use: [{loader: "html-loader", options: {minimize: true}}]
 			},
 			{
-				test: /\.(jpe?g|png|gif|svg)$/i,
-				loader: "url-loader",
+				test: /\.(gif|png|jpe?g|svg)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: 'img/[name].[ext]',
+						},
+					},
+					{
+						loader: 'image-webpack-loader',
+						options: {
+							bypassOnDebug: true, // webpack@1.x
+							disable: true, // webpack@2.x and newer
+						},
+					},
+				],
+			},
+			{
+				test: /\.otf$/,
+				use: {
+					loader: "url-loader",
+					options: {
+						limit: 50000,
+						name: "./fonts/[name].[ext]",
+					}
+				},
 			},
 			{
 				test: /\.m?js$/,
@@ -61,7 +86,7 @@ module.exports = {
 							sourceMap: true,
 							plugins: () => [
 								require('autoprefixer')({
-									'browsers': ['> 0.2%', 'last 100 versions']
+									'Browserslist': ['> 0.2%', 'last 100 versions']
 								}),
 								require('css-mqpacker'),
 								require('cssnano')({
@@ -91,6 +116,7 @@ module.exports = {
 			filename: "[name].css",
 			chunkFilename: "[id].css"
 		}),
+		new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
 		new CleanWebpackPlugin(),
 		new NotifierPlugin({
 			onErrors: (severity, errors) => {
