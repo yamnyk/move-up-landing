@@ -1,4 +1,8 @@
 @import "reset";
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 @import "sections/header";
 @import "sections/text-blocks";
 @import "sections/feedback-form";
