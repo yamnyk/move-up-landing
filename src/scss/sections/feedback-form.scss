@@ -1,3 +1,84 @@
-smth {
-  background-color: #fff;
+.contact-form{
+  background-image: linear-gradient(to right, #fe7102, #da2987);
+  height: 535px;
+  position: relative;
+
+  &__recruiter{
+    position: absolute;
+    top: -219px;
+    left: 65px;
+  }
+
+  &__cloud-quote {
+    position: relative;
+    top: -195px;
+    left: 465px;
+  }
+
+    &__quote {
+      position: absolute;
+      top: -105px;
+      left: 600px;
+
+      &__questions {
+        font-size: 38px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__position{
+        margin-top: 65px;
+        font-size: 18px;
+
+        &-name{
+          font-size: 23px;
+          margin-right: 30px;
+        }
+      }
+    }
+
+  &__get-info{
+    //display: flex;
+    position: absolute;
+    right: 150px;
+    bottom: 70px;
+    //flex-direction: column;
+    width: 440px;
+
+    &__labels{
+      font-size: 18px;
+      color: #ffffff;
+      margin-right: 15px;
+    }
+
+    &__labels:nth-child(-n+3){
+      margin-right: 18px;
+    }
+
+    &__inputs{
+      width: 370px;
+      height: 40px;
+      margin-bottom: 10px;
+      //display: block;
+      border-radius: 10px;
+      border-color: transparent;
+    }
+
+    &__inputs-button{
+      width: 170px;
+      height: 60px;
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 33px;
+      font-size: 20px;
+      margin: 10px 0 0 270px;
+      cursor: pointer;
+    }
+
+    &__inputs-button:hover{
+      border: 1px solid #fe7102;
+    }
+
+  }
 }
