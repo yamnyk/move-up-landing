@@ -6,15 +6,97 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Move Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
 </head>
 <body>
-<img src="img/fb.png" alt="">
-<section class="header"></section>
+
+<section class="header">
+    <div class="top-menu container">
+        <div class="top-menu__wrapper">
+            <img src="img/logo.png" alt="logo NOT FOUND" class="top-menu__logo-img">
+
+            <ul class="top-menu__nav-menu">
+                <li class="top-menu__nav-menu__item">
+                    <a href="#" id="companies-btn" class="top-menu__nav-menu__item__link">FOR COMPANIES</a>
+                </li>
+                <li class="top-menu__nav-menu__item">
+                    <a href="#" id="candidates-btn" class="top-menu__nav-menu__item__link">FOR CANDIDATES</a>
+                </li>
+                <li class="top-menu__nav-menu__item">
+                    <a href="#" id="startups-btn" class="top-menu__nav-menu__item__link">FOR STARTUPS</a>
+                </li>
+                <li class="top-menu__nav-menu__item">
+                    <a href="#" id="contacts-btn" class="top-menu__nav-menu__item__link">CONTACTS</a>
+                </li>
+            </ul>
+            <a href="tel: (044) 344 59 20" class="top-menu__phone">
+                +38 044 344 59 20
+            </a>
+        </div>
+    </div>
+
+    <div class="header__main-info container">
+        <p class="header__main-info__slogan">
+            Matching the best
+            talents with the best
+            companies within 30 days
+        </p>
+        <a href="#" id="contactUsBtn" class="header__main-info__contact-button">CONTACT US</a>
+    </div>
+</section>
+
+
 <section class="text-block"></section>
 <section class="text-block"></section>
 <section class="text-block"></section>
 <section class="contact-form"></section>
-<section class="partners"></section>
+
+<section class="partners">
+
+    <div class="partners-wrapper container">
+        <h2 class="partners-headline">We're excited about our work</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div class="swiper-slide">
+                    <img src="img/personalics-logo.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/RoadwareZ-logo.png" alt="">
+                </div>
+
+                <div class="swiper-slide bfrow">
+                    <img src="img/bfrow-logo.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/AVIAN-logo.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="img/logo_DAN.png" alt="">
+                </div>
+
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+</section>
+
 <section class="footer"></section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+
 </body>
 </html>

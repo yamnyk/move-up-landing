@@ -1,0 +1,36 @@
+.partners{
+  margin-top: 120px;
+  &-wrapper{
+    display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  &-headline{
+    margin-bottom: 100px;
+    font-family: 'Neris-SemiBold', sans-serif;
+    font-size: 55px;
+  }
+}
+
+.swiper-container {
+  margin: 0;
+  width: 1150px;
+  height: 100px;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev{
+  left: 0;
+  background-image: url("/src/img/prev-arrow.png") ;
+}
+
+.swiper-button-next{
+  right: 0;
+  background-image: url("/src/img/next-arrow.png") ;
+}
