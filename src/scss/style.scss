@@ -1,11 +1,11 @@
-@import "reset";
+@import "./reset";
 .container {
   max-width: 1400px;
   padding: 0 20px;
   margin: 0 auto;
 }
-@import "sections/header";
-@import "sections/text-blocks";
-@import "sections/feedback-form";
-@import "sections/partners-and-footer";
-@import "media/all-media";
+@import "./sections/header";
+@import "./sections/text-blocks";
+@import "./sections/feedback-form";
+@import "./sections/partners-and-footer";
+@import "./media/all-media";

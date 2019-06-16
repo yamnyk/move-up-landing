@@ -28,7 +28,7 @@ module.exports = {
 	optimization: {
 		minimizer: [
 			new TerserPlugin(),
-			new OptimizeCSSAssetsPlugin({ cssProcessorOptions: { map: { inline: false, annotation: true}}})
+			// new OptimizeCSSAssetsPlugin({ cssProcessorOptions: { map: { inline: false, annotation: true}}})
 		]
 	},
 	module: {
@@ -38,33 +38,34 @@ module.exports = {
 				use: [{loader: "html-loader", options: {minimize: true}}]
 			},
 			{
-				test: /\.(gif|png|jpe?g|svg)$/i,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: 'img/[name].[ext]',
-						},
-					},
-					{
-						loader: 'image-webpack-loader',
-						options: {
-							bypassOnDebug: true, // webpack@1.x
-							disable: true, // webpack@2.x and newer
-						},
-					},
-				],
+				test: /\.(gif|png|jpe?g|svg|otf)$/i,
+				loader: "url-loader"
+				// use: [
+					// {
+					// 	loader: 'file-loader',
+					// 	options: {
+					// 		name: './img/[name].[ext]',
+					// 	},
+					// },
+					// {
+					// 	loader: 'image-webpack-loader',
+					// 	options: {
+					// 		bypassOnDebug: true, // webpack@1.x
+					// 		disable: true, // webpack@2.x and newer
+					// 	},
+					// },
+				// ],
 			},
-			{
-				test: /\.otf$/,
-				use: {
-					loader: "url-loader",
-					options: {
-						limit: 50000,
-						name: "./fonts/[name].[ext]",
-					}
-				},
-			},
+			// {
+			// 	test: /\.otf$/,
+			// 	use: {
+			// 		loader: "url-loader",
+			// 		options: {
+			// 			limit: 50000,
+			// 			name: "./fonts/[name].[ext]",
+			// 		}
+			// 	},
+			// },
 			{
 				test: /\.m?js$/,
 				use: {
@@ -77,9 +78,15 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				use: [
-					{loader: "style-loader"},
-					{loader: MiniCssExtractPlugin.loader},
-					{loader: "css-loader"},
+					{
+						loader: MiniCssExtractPlugin.loader
+					},
+					{
+						loader: "css-loader",
+						options: {
+							url: false
+						}
+					},
 					{
 						loader: "postcss-loader",
 						options: {
@@ -102,7 +109,9 @@ module.exports = {
 							]
 						}
 					},
-					{loader: "sass-loader"}
+					{
+						loader: "sass-loader",
+					}
 				]
 			}
 		]
@@ -116,7 +125,15 @@ module.exports = {
 			filename: "[name].css",
 			chunkFilename: "[id].css"
 		}),
-		new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
+		new CopyWebpackPlugin([{
+			from: './src/img/',
+			to: './img'
+		}]),
+		new CopyWebpackPlugin([{
+			from: './src/fonts/',
+			to: './fonts'
+		}]),
+		// new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
 		new CleanWebpackPlugin(),
 		new NotifierPlugin({
 			onErrors: (severity, errors) => {

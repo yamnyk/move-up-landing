@@ -1,5 +1,5 @@
 .header{
-  background: url('../img/header-bg.png') no-repeat;
+  background: url('./../img/header-bg.png') no-repeat;
   background-size: cover;
   height: 945px;
 
@@ -11,7 +11,9 @@
     &__slogan{
       width: 687px;
       font-size: 60px;
-      font-family: 'Neris-SemiBold', sans-serif;
+      font-family: Neris;
+      font-weight: 600;
+      font-style: normal;
     }
     &__contact-button{
       margin-top: 75px;
