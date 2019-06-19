@@ -7,15 +7,18 @@
       justify-content: flex-start;
   }
   &-headline{
+    margin-left: 15px;
     margin-bottom: 100px;
-    font-family: 'Neris-SemiBold', sans-serif;
+    font-family: 'Neris', sans-serif;
+    font-weight: 600;
     font-size: 55px;
   }
 }
 
 .swiper-container {
+  align-self: center;
   margin: 0;
-  width: 1150px;
+  width: 1345px;
   height: 100px;
 }
 
@@ -33,4 +36,63 @@
 .swiper-button-next{
   right: 0;
   background-image: url("../img/next-arrow.png") ;
+}
+
+.map-box{
+  position: relative;
+  width: 100%;
+  height: 572px;
+}
+
+.footer{
+  margin-top: 115px;
+}
+
+.contacts-info{
+  position: absolute;
+  top: 0;
+  left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 370px;
+  height: 500px;
+  background: #ffffff;
+  z-index: 99999;
+  border-bottom-right-radius: 47%;
+  border-bottom-left-radius: 47%;
+  &__phone{
+    margin-top: 55px;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Neris',sans-serif;
+    font-weight: 600;
+    color: #000000;
+  }
+  &__email{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Neris',sans-serif;
+    font-weight: 600;
+    color:rgba(242, 55, 103, 255);
+  }
+  &__address{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Neris',sans-serif;
+    font-weight: 600;
+  }
+  &__privacy{
+    margin-bottom: 32px;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: 'Neris',sans-serif;
+    font-weight: 500;
+  }
+  &__linkedin-link{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }

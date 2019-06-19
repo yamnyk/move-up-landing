@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Move Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 
@@ -37,9 +38,9 @@
 
     <div class="header__main-info container">
         <p class="header__main-info__slogan">
-            Matching the best
-            talents with the best
-            companies within 30 days
+            <span class="header__main-info__slogan_item">Matching the best</span>
+            <span class="header__main-info__slogan_item">talents with the best</span>
+            <span class="header__main-info__slogan_item">companies within 30 days</span>
         </p>
         <a href="#" id="contactUsBtn" class="header__main-info__contact-button">CONTACT US</a>
     </div>
@@ -82,6 +83,10 @@
                     <img src="img/logo_DAN.png" alt="">
                 </div>
 
+                <div class="swiper-slide bfrow">
+                    <img src="img/bfrow-logo.png" alt="">
+                </div>
+
             </div>
 
             <!-- If we need navigation buttons -->
@@ -93,8 +98,45 @@
 
 </section>
 
-<section class="footer"></section>
+<section class="footer">
 
+    <div class="map-box" id='map'>
+        <div class="contacts-info">
+            <a href="tel: (044) 344 59 20" class="contacts-info__phone">
+                (044) 344 59 20
+            </a>
+            <a href="hello@moveup.com.ua" class="contacts-info__email">
+                hello@moveup.com.ua
+            </a>
+            <p class="contacts-info__address">
+                <span class="contacts-info__address-item">
+                    1B Pavla Tychyny Ave.,
+                </span>
+                <span class="contacts-info__address-item">
+                    office A, 6 floor, Ukraine
+                </span>
+            </p>
+            <div class="social-icons">
+                <a href="#" class="contacts-info__facebook-link">
+                    <img src="img/fb.png" alt="" class="contacts-info__facebook-link_icon">
+                </a>
+
+                <a href="#" class="contacts-info__linkedin-link">
+                    <img src="img/linkedin.png" alt="" class="contacts-info__linkedin-link_icon">
+                </a>
+
+                <a href="#" class="contacts-info__instagram-link">
+                    <img src="img/instagram.png" alt="" class="contacts-info__instagram-link_icon">
+                </a>
+
+            </div>
+                <p class="contacts-info__privacy">Privacy Policy</p>
+        </div>
+    </div>
+
+</section>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 <script src="js/index.js"></script>
 

@@ -9,11 +9,17 @@
     display: flex;
     flex-direction: column;
     &__slogan{
+      display: flex;
+      flex-direction: column;
       width: 687px;
       font-size: 60px;
-      font-family: Neris;
+      font-family: 'Neris';
       font-weight: 600;
       font-style: normal;
+      line-height: 1.2;
+      &_item:nth-child(3){
+        min-width: 691px;
+      }
     }
     &__contact-button{
       margin-top: 75px;
@@ -22,8 +28,8 @@
       padding: 16px 50px;
       color: #ffffff;
       font-size: 24px;
-      font-weight: 900;
-      font-family: 'Neris-Black', sans-serif;
+      font-weight: 700;
+      font-family: 'Neris', sans-serif;
       cursor: pointer;
       border-radius: 4.4rem;
       border: double 11px transparent;
@@ -56,8 +62,8 @@
         text-decoration: none;
         color: #000000;
         font-size: 18px;
-        font-family: 'Neris-SemiBold', sans-serif;
-        font-weight: 700;
+        font-family: 'Neris', sans-serif;
+        font-weight: 600;
 
         &::before{
           content: "";
@@ -85,6 +91,7 @@
     text-decoration: none;
     color: rgba(243, 84, 125, 255);
     font-size: 23px;
-    font-family: 'Neris-Black', sans-serif;
+    font-family: 'Neris', sans-serif;
+    font-weight: 700;
   }
 }
