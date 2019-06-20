@@ -100,44 +100,45 @@
 
 </section>
 
-<section class="contact-form">
-    <img src="img/recruiter.png" alt="recruiter-not-found" class="contact-form__recruiter">
-    <img src="img/quote-cloud.png" alt="quote-cloud-not-found" class="contact-form__cloud-quote">
-    <div class="contact-form__quote">
-        <p class="contact-form__quote__questions">
-            <span>Have some questions?</span>
-            <span>Need more info?</span>
-            <span>Please contact me directly</span>
-        </p>
-        <p class="contact-form__quote__position">
-            <span class="contact-form__quote__position-name">Olha Vasilyeva</span>
-            Head of Recruitment</p>
+<section class="contact-form-wrapper">
+    <div class="contact-form container">
+        <img src="img/recruiter.png" alt="recruiter-not-found" class="contact-form__recruiter">
+        <div class="contact-form__quote">
+            <!--<img src="img/quote-cloud.png" alt="quote-cloud-not-found" class="contact-form__cloud-quote">-->
+            <p class="contact-form__quote__questions">
+                <span>Have some questions?</span>
+                <span>Need more info?</span>
+                <span>Please contact me directly</span>
+            </p>
+            <p class="contact-form__quote__position">
+                <span class="contact-form__quote__position-name">Olha Vasilyeva</span>
+                Head of Recruitment</p>
+        </div>
+
+        <form action="/" class="contact-form__get-info" id="orderForm">
+
+            <div class="inputs-container">
+                <label for="form__name" class="contact-form__get-info__labels kek1">name</label>
+                <input type="text" minlength="3" name="name" id="form__name"
+                       class="contact-form__get-info__inputs contact-form__get-info__inputs-name">
+            </div>
+
+            <div class="inputs-container">
+                <label for="form__email" class="contact-form__get-info__labels kek2">e-mail</label>
+                <input type="email" name="email" id="form__email"
+                       class="contact-form__get-info__inputs contact-form__get-info__inputs-email">
+            </div>
+
+            <div class="inputs-container">
+                <label for="form__phone" class="contact-form__get-info__labels kek3">phone</label>
+                <input type="tel" name="phone" id="form__phone"
+                       class="contact-form__get-info__inputs contact-form__get-info__inputs-phone">
+            </div>
+
+            <input type="submit" value="SEND" id="submitBtn"
+                   class="contact-form__get-info__inputs contact-form__get-info__inputs-button">
+        </form>
     </div>
-
-    <form action="/" class="contact-form__get-info" id="orderForm">
-
-        <div class="inputs-container">
-        <label for="form__name" class="contact-form__get-info__labels kek1">name</label>
-        <input type="text" minlength="3" name="name" id="form__name"
-               class="contact-form__get-info__inputs contact-form__get-info__inputs-name">
-        </div>
-
-        <div class="inputs-container">
-        <label for="form__email" class="contact-form__get-info__labels kek2">e-mail</label>
-        <input type="email" name="email" id="form__email"
-               class="contact-form__get-info__inputs contact-form__get-info__inputs-email">
-        </div>
-
-        <div class="inputs-container">
-        <label for="form__phone" class="contact-form__get-info__labels kek3">phone</label>
-        <input type="tel" name="phone" id="form__phone"
-               class="contact-form__get-info__inputs contact-form__get-info__inputs-phone">
-        </div>
-
-        <input type="submit" value="SEND" id="submitBtn"
-               class="contact-form__get-info__inputs contact-form__get-info__inputs-button">
-    </form>
-
 </section>
 
 <section class="partners">
