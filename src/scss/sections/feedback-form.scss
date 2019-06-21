@@ -1,3 +1,95 @@
-smth {
-  background-color: #fff;
+.contact-form{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  &-wrapper {
+    background-image: linear-gradient(to right, #fe7102, #da2987);
+    font-family: 'Neris', sans-serif;
+    position: relative;
+    padding: 250px 0 100px 0;
+  }
+  &__recruiter{
+    position: absolute;
+    top: -176px;
+    left: 12%;
+  }
+
+  &__cloud-quote {
+    position: absolute;
+  }
+
+  &__quote {
+    background: url(../../img/quote-cloud.png) center no-repeat;
+    position: absolute;
+    top: -165px;
+    left: 35%;
+    padding: 90px 65px 50px 150px;
+
+    &__questions {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 45px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__position{
+      margin-top: 65px;
+      font-size: 18px;
+
+      &-name{
+        font-size: 23px;
+        margin-right: 30px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__get-info{
+    text-align: right;
+
+    &__labels{
+      font-size: 18px;
+      color: #ffffff;
+      left: -70px;
+      top: 12px;
+      position: absolute;
+    }
+
+    .inputs-container{
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    &__inputs{
+      width: 370px;
+      font-size: 15px;
+      padding: 12px 0 12px 10px;
+      border-radius: 10px;
+      border: none;
+      display: inline-block;
+    }
+
+    &__inputs-button{
+      width: 170px;
+      padding: 20px 0;
+      margin-top: 10px;
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 33px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    &__inputs-button:hover{
+      border: 1px solid #fe7102;
+    }
+
+  }
+}
+
+.error{
+  display: block;
+  margin-bottom: 5px;
 }
