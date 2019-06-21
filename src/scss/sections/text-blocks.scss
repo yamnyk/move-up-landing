@@ -1,0 +1,90 @@
+.text-block {
+  font-family: 'Neris', sans-serif;
+  display: flex;
+  overflow: hidden;
+
+  &__picture-column {
+    width: 50%;
+
+    &__headline {
+      font-size: 56px;
+      font-weight: 600;
+      width: 400px;
+      margin: 80px 0 35px 70px;
+    }
+
+    &__headline-graphic {
+      margin-top: 200px;
+    }
+
+    &__headline-high-five{
+      width: 635px;
+      font-size: 53px;
+      margin-top: 190px;
+    }
+
+    &__high-five{
+      margin-left: 70px;
+    }
+
+  }
+
+  &__picture-column-graphic{
+    margin-top: 200px;
+
+    &__graphic{
+      margin: -10px 0 0 10px;
+    }
+  }
+
+  &__text-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__paragraph {
+      font-size: 30px;
+      font-weight: 300;
+      width: 82%;
+      margin-top: 250px;
+      line-height: 40px;
+    }
+
+    &__paragraph-graphic{
+      margin: 50px 10px 10px 70px;
+      width: 89%;
+    }
+
+    &__paragraph-high-five{
+      margin-top: 350px;
+      width: 77%;
+    }
+
+    &__button {
+      font-size: 21px;
+      font-weight: bold;
+      text-decoration: none;
+      //width: 412px;
+      width: 58%;
+      margin-top: 120px;
+      margin-left: 90px;
+      padding: 25px 20px;
+      color: #ffffff;
+      border-radius: 45px;
+      border: solid 8px transparent;
+      background-image: linear-gradient(to left, #fe7102, #da2987), radial-gradient(circle at top left, rgba(212, 84, 125, 0.5), rgba(246, 102, 54, 0.5));
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      cursor: pointer;
+      outline: none;
+    }
+    &__button-graphic{
+      margin: 90px 0 0 70px;
+      align-self: flex-start;
+    }
+  }
+}
+.text-block:nth-child(4){
+  margin-bottom: 350px;
+}
