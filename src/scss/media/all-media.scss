@@ -2,3 +2,64 @@
 @import "text-blocks_media";
 @import "feedback-form_media";
 @import "partners-and-footer_media";
+
+@media (max-width: 950px) {
+  html {
+    font-size: 5px;
+  }
+  .contact-form__recruiter {
+    top: -50.2rem;
+    width: 60rem;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 3px;
+  }
+  .header__main-info__slogan {
+    font-size: 10rem;
+    width: 100%;
+  }
+  .text-block {
+    flex-direction: column;
+    align-items: center;
+    &__text-column {
+      width: 80%;
+      &__paragraph {
+        margin-top: 15rem;
+        font-size: 4rem;
+        line-height: 1.25;
+      }
+    }
+    &__picture-column__headline {
+      font-size: 8rem;
+    }
+    &__picture-column {
+      width: 80%;
+    }
+  }
+  .contact-form {
+    &__recruiter {
+      top: -35.8rem;
+    }
+    &__quote {
+      top: -35rem;
+    }
+    &__get-info {
+      width: 50%;
+      &__inputs {
+        width: 47rem;
+        padding: 3.2rem 0 3.2rem 2rem;
+      }
+      &__labels {
+        font-size: 5rem;
+      }
+      &__inputs-button {
+        font-size: 5rem;
+        border: 0.3rem solid #fff;
+        padding: 1.5rem 1rem;
+      }
+    }
+  }
+}
