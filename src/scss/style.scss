@@ -1,7 +1,10 @@
 @import "./reset";
+html {
+  font-size: 10px;
+}
 .container {
-  max-width: 1400px;
-  padding: 0 20px;
+  max-width: 140rem;
+  padding: 0 2rem;
   margin: 0 auto;
 }
 @import "./sections/header";

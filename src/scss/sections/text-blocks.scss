@@ -1,78 +1,78 @@
 .text-block {
   font-family: 'Neris', sans-serif;
   display: flex;
+  justify-content: space-between;
   overflow: hidden;
+
+  &__picture {
+    width: 100%;
+  }
 
   &__picture-column {
     width: 50%;
 
     &__headline {
-      font-size: 56px;
+      font-size: 5.6rem;
       font-weight: 600;
-      width: 400px;
-      margin: 80px 0 35px 70px;
+      margin: 8rem 0 3.5rem 7rem;
     }
 
     &__headline-graphic {
-      margin-top: 200px;
+      margin-top: 20rem;
     }
 
     &__headline-high-five{
-      width: 635px;
-      font-size: 53px;
-      margin-top: 190px;
+      font-size: 5.3rem;
+      margin-top: 19rem;
     }
 
     &__high-five{
-      margin-left: 70px;
+      margin-left: 7rem;
     }
 
   }
 
   &__picture-column-graphic{
-    margin-top: 200px;
+    margin-top: 20rem;
 
     &__graphic{
-      margin: -10px 0 0 10px;
+      margin: -1rem 0 0 1rem;
     }
   }
 
   &__text-column {
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
 
     &__paragraph {
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: 300;
-      width: 82%;
-      margin-top: 250px;
-      line-height: 40px;
+      margin-top: 25rem;
+      line-height: 4rem;
     }
 
     &__paragraph-graphic{
-      margin: 50px 10px 10px 70px;
+      margin: 5rem 1rem 1rem 7rem;
       width: 89%;
     }
 
     &__paragraph-high-five{
-      margin-top: 350px;
+      margin-top: 35rem;
       width: 77%;
     }
 
     &__button {
-      font-size: 21px;
+      font-size: 2.1rem;
       font-weight: bold;
       text-decoration: none;
-      //width: 412px;
-      width: 58%;
-      margin-top: 120px;
-      margin-left: 90px;
-      padding: 25px 20px;
+      margin-top: 15%;
+      text-align: center;
+      padding: 2rem 2rem;
       color: #ffffff;
-      border-radius: 45px;
-      border: solid 8px transparent;
+      border-radius: 4.5rem;
+      border: solid 0.8rem transparent;
       background-image: linear-gradient(to left, #fe7102, #da2987), radial-gradient(circle at top left, rgba(212, 84, 125, 0.5), rgba(246, 102, 54, 0.5));
       background-origin: border-box;
       background-clip: padding-box, border-box;
@@ -80,11 +80,11 @@
       outline: none;
     }
     &__button-graphic{
-      margin: 90px 0 0 70px;
+      margin: 9rem 0 0 7rem;
       align-self: flex-start;
     }
   }
 }
 .text-block:nth-child(4){
-  margin-bottom: 350px;
+  margin-bottom: 35rem;
 }

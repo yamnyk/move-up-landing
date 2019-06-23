@@ -1,38 +1,37 @@
 .header{
   background: url('./../img/header-bg.png') no-repeat;
   background-size: cover;
-  padding-bottom: 250px;
+  padding-bottom: 25rem;
 
   &__main-info{
-    margin-top: 200px;
-    width: 100%;
+    margin-top: 20rem;
     display: flex;
     flex-direction: column;
     &__slogan{
       display: flex;
       flex-direction: column;
-      width: 687px;
-      font-size: 60px;
+      width: 68.7rem;
+      font-size: 6rem;
       font-family: 'Neris';
       font-weight: 600;
       font-style: normal;
       line-height: 1.2;
       &_item:nth-child(3){
-        min-width: 691px;
+        min-width: 69.1rem;
       }
     }
     &__contact-button{
-      margin-top: 75px;
+      margin-top: 7.5rem;
       align-self: flex-start;
       text-decoration: none;
-      padding: 16px 50px;
+      padding: 1.6rem 5rem;
       color: #ffffff;
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: 700;
       font-family: 'Neris', sans-serif;
       cursor: pointer;
       border-radius: 4.4rem;
-      border: double 11px transparent;
+      border: double 1.1rem transparent;
       background-image: linear-gradient(to right, #d65578 , #f4653a), radial-gradient(circle at top left, rgba(214,85,120,.5), rgba(244,101,58, .5));
       background-origin: border-box;
       background-clip: padding-box, border-box;
@@ -41,27 +40,35 @@
 }
 
 .top-menu{
-  padding-top:50px;
-  width: 100%;
+  padding-top:5rem;
+
+  &__logo {
+    flex-basis: 15%;
+    &-img {
+      width: 100%;
+    }
+  }
 
   &__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
   }
 
   &__nav-menu{
     display: flex;
     justify-content: space-between;
-    width: 620px;
+    max-width: 62rem;
+    //width: 62rem;
+    flex-basis: 60%;
 
     &__item{
       &__link{
         position: relative;
         text-decoration: none;
         color: #000000;
-        font-size: 18px;
+        font-size: 1.8rem;
         font-family: 'Neris', sans-serif;
         font-weight: 600;
 
@@ -69,12 +76,12 @@
           content: "";
           position: absolute;
           width: 100%;
-          height: 4px;
-          bottom: -8px;
+          height: 0.4rem;
+          bottom: -0.8rem;
           left: 0;
           background-image: linear-gradient(to right, #d65578 , #f4653a);
           visibility: hidden;
-          border-radius: 5px;
+          border-radius: 0.5rem;
           transform: scaleX(0);
           transition: .3s linear;
         }
@@ -90,7 +97,7 @@
   &__phone{
     text-decoration: none;
     color: rgba(243, 84, 125, 255);
-    font-size: 23px;
+    font-size: 2.3rem;
     font-family: 'Neris', sans-serif;
     font-weight: 700;
   }
